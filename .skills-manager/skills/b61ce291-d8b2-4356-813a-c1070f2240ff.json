@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b61ce291-d8b2-4356-813a-c1070f2240ff",
+  "path": "brainstorm-okrs",
+  "path_key": "brainstorm-okrs",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/brainstorm-okrs",
+    "subpath": "pm-execution\\skills\\brainstorm-okrs",
+    "branch": null
+  }
+}

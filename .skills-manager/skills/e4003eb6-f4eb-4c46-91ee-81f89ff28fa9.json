@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e4003eb6-f4eb-4c46-91ee-81f89ff28fa9",
+  "path": "retro",
+  "path_key": "retro",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/retro",
+    "subpath": "pm-execution\\skills\\retro",
+    "branch": null
+  }
+}

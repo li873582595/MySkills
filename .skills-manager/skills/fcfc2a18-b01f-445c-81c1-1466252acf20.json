@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "fcfc2a18-b01f-445c-81c1-1466252acf20",
+  "path": "stakeholder-map",
+  "path_key": "stakeholder-map",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/stakeholder-map",
+    "subpath": "pm-execution\\skills\\stakeholder-map",
+    "branch": null
+  }
+}

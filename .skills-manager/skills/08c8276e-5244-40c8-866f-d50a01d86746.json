@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "08c8276e-5244-40c8-866f-d50a01d86746",
+  "path": "mermaid-diagrams",
+  "path_key": "mermaid-diagrams",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "softaworks/agent-toolkit/mermaid-diagrams",
+    "subpath": "skills\\mermaid-diagrams",
+    "branch": null
+  }
+}

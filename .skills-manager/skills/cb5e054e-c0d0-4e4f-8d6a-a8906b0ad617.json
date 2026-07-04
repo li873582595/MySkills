@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "cb5e054e-c0d0-4e4f-8d6a-a8906b0ad617",
+  "path": "skill-creator",
+  "path_key": "skill-creator",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "anthropics/skills/skill-creator",
+    "subpath": "skills\\skill-creator",
+    "branch": null
+  }
+}

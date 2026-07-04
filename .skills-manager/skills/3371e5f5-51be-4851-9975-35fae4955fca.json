@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3371e5f5-51be-4851-9975-35fae4955fca",
+  "path": "wwas",
+  "path_key": "wwas",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/wwas",
+    "subpath": "pm-execution\\skills\\wwas",
+    "branch": null
+  }
+}

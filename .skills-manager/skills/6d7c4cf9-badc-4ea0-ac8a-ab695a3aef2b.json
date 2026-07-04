@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6d7c4cf9-badc-4ea0-ac8a-ab695a3aef2b",
+  "path": "user-stories",
+  "path_key": "user-stories",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/user-stories",
+    "subpath": "pm-execution\\skills\\user-stories",
+    "branch": null
+  }
+}

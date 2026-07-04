@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e14b3bc0-cb5b-4f08-9e79-830e045db3ad",
+  "path": "pre-mortem",
+  "path_key": "pre-mortem",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/pre-mortem",
+    "subpath": "pm-execution\\skills\\pre-mortem",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c9812d25-94db-4ace-9401-c21c70d0830b",
+  "path": "release-notes",
+  "path_key": "release-notes",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/release-notes",
+    "subpath": "pm-execution\\skills\\release-notes",
+    "branch": null
+  }
+}

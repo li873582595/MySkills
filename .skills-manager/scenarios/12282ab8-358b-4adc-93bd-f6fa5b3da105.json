@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "12282ab8-358b-4adc-93bd-f6fa5b3da105",
+  "name": "claude",
+  "description": null,
+  "icon": "code-2",
+  "sort_order": 999
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "335387cb-e266-4dc1-b950-a7028f69bd7c",
+  "path": "dummy-dataset",
+  "path_key": "dummy-dataset",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "phuryn/pm-skills/dummy-dataset",
+    "subpath": "pm-execution\\skills\\dummy-dataset",
+    "branch": null
+  }
+}

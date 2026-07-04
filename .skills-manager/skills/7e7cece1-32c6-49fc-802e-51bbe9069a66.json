@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "7e7cece1-32c6-49fc-802e-51bbe9069a66",
+  "path": "minimax-xlsx",
+  "path_key": "minimax-xlsx",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "minimax-ai/skills/minimax-xlsx",
+    "subpath": "skills\\minimax-xlsx",
+    "branch": null
+  }
+}

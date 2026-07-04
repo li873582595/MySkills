@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "aa222803-661e-4074-9f5c-8b78d0d21849",
+  "path": "theme-factory",
+  "path_key": "theme-factory",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "anthropics/skills/theme-factory",
+    "subpath": "skills\\theme-factory",
+    "branch": null
+  }
+}
