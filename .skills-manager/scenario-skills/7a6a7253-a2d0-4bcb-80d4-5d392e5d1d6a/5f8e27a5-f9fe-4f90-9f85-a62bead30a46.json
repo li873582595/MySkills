@@ -4,9 +4,9 @@
   "skill_id": "5f8e27a5-f9fe-4f90-9f85-a62bead30a46",
   "sort_order": 4,
   "tools": {
-    "claude_code": true,
+    "claude_code": false,
     "codewhale": true,
-    "codex": true,
+    "codex": false,
     "opencode": true,
     "pi": true,
     "qoder": true,
