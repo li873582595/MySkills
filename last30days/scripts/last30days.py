@@ -677,8 +677,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--x-handle", help="X handle for targeted supplemental search")
     parser.add_argument("--x-related", help="Comma-separated related X handles (searched with lower weight)")
     parser.add_argument("--web-backend", default="auto",
-                        choices=["auto", "brave", "exa", "serper", "parallel", "none"],
-                        help="Web search backend (default: auto, tries Brave then Exa then Serper then Parallel)")
+                        choices=["auto", "brave", "exa", "serper", "parallel", "keyless", "none"],
+                        help="Web search backend (default: auto, tries Brave then Exa then Serper then Parallel; "
+                             "keyless forces the zero-key DuckDuckGo/SearXNG floor)")
     parser.add_argument("--deep-research", action="store_true",
                         help="Use Perplexity Deep Research (~$0.90/query) for in-depth analysis. Requires PERPLEXITY_API_KEY or OPENROUTER_API_KEY.")
     parser.add_argument("--hiring-signals", action="store_true",
@@ -2303,6 +2304,15 @@ def _render_save_and_print(
                     json_profile=args.json_profile,
                     register=audience.name,
                 )
+            if args.emit not in {"json", "html"} and not entity_reports:
+                # Markdown saves keep the complete debug artifact (all clusters
+                # and per-source items), matching the render_fn-less path in
+                # save_output and the comparison peer saves. Saving the compact
+                # stdout render instead made most collected evidence
+                # unrecoverable from the raw file (#923). The stdout re-render
+                # above still runs so the visible footer cites the real path,
+                # and the saved artifact carries the same citation.
+                return render.render_full(report, save_path=display)
             return rendered
 
         save_path = save_output(
