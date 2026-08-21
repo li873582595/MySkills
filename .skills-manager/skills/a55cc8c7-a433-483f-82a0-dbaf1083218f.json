@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a55cc8c7-a433-483f-82a0-dbaf1083218f",
+  "path": "open-code-review",
+  "path_key": "open-code-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "alibaba/open-code-review/open-code-review",
+    "subpath": "skills\\open-code-review",
+    "branch": null
+  }
+}
