@@ -5,7 +5,7 @@
   "sort_order": 5,
   "tools": {
     "claude_code": true,
-    "codewhale": true,
+    "codewhale": false,
     "codex": true,
     "deepseek_harness": true,
     "junie": true,
