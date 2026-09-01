@@ -756,9 +756,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--x-handle", help="X handle for targeted supplemental search")
     parser.add_argument("--x-related", help="Comma-separated related X handles (searched with lower weight)")
     parser.add_argument("--web-backend", default="auto",
-                        choices=["auto", "brave", "exa", "serper", "parallel", "keyless", "none"],
-                        help="Web search backend (default: auto, tries Brave then Exa then Serper then Parallel; "
-                             "keyless forces the zero-key DuckDuckGo/SearXNG floor)")
+                        choices=["auto", "brave", "exa", "serper", "parallel", "parallel-mcp", "keyless", "none"],
+                        help="Web search backend (default: auto; parallel-mcp explicitly opts into the "
+                             "anonymous hosted MCP; keyless forces the zero-key floor)")
     parser.add_argument("--deep-research", action="store_true",
                         help="Use at most one Perplexity Deep Research run. Direct PERPLEXITY_API_KEY uses the Agent API background path; OPENROUTER_API_KEY keeps the synchronous Sonar fallback; cannot be combined with competitor or vs-mode.")
     parser.add_argument("--hiring-signals", action="store_true",
@@ -2914,6 +2914,9 @@ def _main(
         )
         return 2
     config = env.get_config(policy=_config_policy_for_args(args, topic, extra_argv))
+    # One memo per command: comparison mode runs pipeline.run per entity in
+    # parallel, so the reset must not live inside the pipeline.
+    http.reset_reddit_keyless_memo()
     resolved_corpus_dirs = corpus.resolve_directories(
         args.corpus, config.get("LAST30DAYS_CORPUS_DIRS")
     )
