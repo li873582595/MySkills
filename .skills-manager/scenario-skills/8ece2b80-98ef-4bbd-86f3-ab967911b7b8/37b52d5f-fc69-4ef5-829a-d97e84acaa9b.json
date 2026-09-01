@@ -9,11 +9,14 @@
     "codex": true,
     "deepseek_harness": true,
     "junie": true,
+    "kimi": true,
     "opencode": true,
     "pi": true,
     "qoder": true,
     "reasonix": true,
+    "trae": true,
     "trae_cn": true,
+    "workbuddy": true,
     "zcode": true
   }
 }
