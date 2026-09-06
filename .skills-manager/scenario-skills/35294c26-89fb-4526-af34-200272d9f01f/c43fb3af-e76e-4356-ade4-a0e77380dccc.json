@@ -6,7 +6,7 @@
   "tools": {
     "claude_code": true,
     "codex": true,
-    "deepseek_harness": false,
+    "deepseek_harness": true,
     "junie": true,
     "kimi": true,
     "omp_agent": true,
